@@ -1,0 +1,140 @@
+<!Doctype html>
+<html>
+<head>
+	<link rel="stylesheet" href="css/style.css">
+	<title>Survey Form</title>
+</head>
+<body>
+
+<h1 id="title">Survey Form</h1>
+<div class="container">
+	<p id="description">
+		Let us know how we can improve freeCodeCamp
+	</p>
+	<form id="survey-form">
+		<div class="rowTab"><label id="name-label" for="name">* Name:</label></div>
+		<div class="rightTab"><input type="text" id="name" placeholder="Enter your name" class="input-field" autofocus required></div>
+
+		<div class="rowTab"><label id="email-label" for="email">* Email:</label></div>
+		<div class="rightTab"><input type="email" id="email" placeholder="Enter your email" class="input-field" required></div>
+
+		<div class="rowTab"><label id="number-label" for="number">* Age:</label></div>
+		<div class="rightTab"><input type="number" id="number" min="1" max="125" placeholder="Enter your age" class="input-field" required></div>
+
+		<div class="rowTab"><label for="dropdown">Which option best describes your current role?</label></div>
+		<div class="rightTab"><select class="select-field" name="currentPos" id="dropdown">
+			<option disabled value>Select an option</option>
+			<option>Student</option>
+			<option>Full Time Job</option>
+			<option>Full Time Learner</option>
+			<option>Prefer not to say</option>
+			<option>other</option>
+		</select></div>
+		<div class="rowTab"><label>* How likely is that you would recommend freeCodeCamp to a friend?</label></div>
+		<div class="rightTab">
+			<ul class="list-ul">
+				<li>
+					<label>
+					<input type="radio" name="userratings" value="Definetly" required>Definetly
+					</label>
+				</li>
+				<li>
+					<label>
+					<input type="radio" name="userratings" value="Maybe" required>Maybe
+					</label>
+				</li>
+				<li>
+					<label>
+						<input type="radio" name="userratings" value="Not Sure" required>Not Sure
+					</label>
+				</li>
+			</ul>
+		</div>
+
+		<div class="rowTab"><label for="likings">What do you like most in FCC:</label></div>
+		<div class="rightTab"><select class="select-field" name="likings" id="likings">
+			<option disabled value>Select an option</option>
+			<option value="Challenges">Challenges</option>
+			<option value="Projects">Projects</option>
+			<option value="community">community</option>
+			<option value="open source">open source</option>
+		</select></div>
+
+		<div class="rowTab"><label>Things that should be improved in the future
+(Check all that apply):</label></div>
+		<div class="rightTab">
+			<ul class="list-ul">
+			<li>
+				<label>
+				<input type="checkbox" name="improve" value="1">Front-end Projects
+				</label>
+			</li>
+			<li>
+				<label>
+					<input type="checkbox" name="improve" value="2">Back-end Projects
+				</label>
+			</li>
+			<li>
+				<label>
+					<input type="checkbox" name="improve" value="3">Data Visualization
+				</label>
+			</li>
+			<li>
+				<label>
+					<input type="checkbox" name="improve" value="4">Challenges
+				</label>
+			</li>
+			<li>
+				<label>
+					<input type="checkbox" name="improve" value="5">Open Source Community
+				</label>
+			</li>
+			<li>
+				<label>
+					<input type="checkbox" name="improve" value="6">Gitter help rooms
+				</label>
+			</li>
+			<li>
+				<label>
+					<input type="checkbox" name="improve" value="7">Videos
+				</label>
+			</li>
+			<li>
+				<label>
+					<input type="checkbox" name="improve" value="8">City Meetups
+				</label>
+			</li>
+			<li>
+				<label>
+					<input type="checkbox" name="improve" value="9">Wiki
+				</label>
+			</li>
+			<li>
+				<label>
+					<input type="checkbox" name="improve" value="10">Forum
+				</label>
+			</li>
+			<li>
+				<label>
+					<input type="checkbox" name="improve" value="11">Additional Cources
+				</label>
+			</li>
+			</ul>
+		</div>
+
+		<div class="rowTab"><lable for="comments">Any Comments or Suggestions?
+		</lable></div>
+		<div class="rightTab"><textarea name="comments" id="comments"></textarea></div>
+
+		<button type="submit" id="submit">Submit</button>
+
+
+	</form>
+</div>
+
+
+
+
+
+</body>
+</html>
