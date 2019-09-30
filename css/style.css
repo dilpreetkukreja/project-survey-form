@@ -13,11 +13,10 @@ body {
 	border-radius: 5px;
 	margin:0 auto;
 	width:80%;
-		text-align: center;
 }
 #survey-form{
 	width:80%;
-	
+
 }
 .rowTab{
 	display:inline-block;
@@ -75,6 +74,9 @@ textarea{
 }
 .rowTab.button{
 	text-align: center;
+}
+form{
+	margin: 0 auto;
 }
 @media screen and (max-width:576px){
 	.rowTab{
